@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_8F-vwK9kEeO5aZI0rqFVJQ" name="am@localhost-insurance_staging" id="_5axtwK9kEeO5aZI0rqFVJQ" label="am@localhost-insurance_staging" dataPackage="_8I9yUK9kEeO5aZI0rqFVJQ" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/insurance_staging?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="am" Password="r5rlDgcciv2EAiprvKCSBQ==" ServerName="localhost" SID="insurance_staging" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" SystemSQL="true">
+    <taggedValue xmi:id="_8F-vwa9kEeO5aZI0rqFVJQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_8HLCkK9kEeO5aZI0rqFVJQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_8IhGYK9kEeO5aZI0rqFVJQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_8IhGYa9kEeO5aZI0rqFVJQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_8IhGYq9kEeO5aZI0rqFVJQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_8IhGY69kEeO5aZI0rqFVJQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_8IhGZK9kEeO5aZI0rqFVJQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_8IhGZa9kEeO5aZI0rqFVJQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_8IhGZq9kEeO5aZI0rqFVJQ" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_8IhGZ69kEeO5aZI0rqFVJQ" tag="DB ProductVersion" value="5.6.16"/>
+    <taggedValue xmi:id="_8IhGaK9kEeO5aZI0rqFVJQ" tag="DB IdentifierQuoteString" value="`"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_8I9yUK9kEeO5aZI0rqFVJQ" name="insurance_staging" dataManager="_8F-vwK9kEeO5aZI0rqFVJQ"/>
+</xmi:XMI>

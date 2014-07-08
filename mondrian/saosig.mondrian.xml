@@ -1,0 +1,109 @@
+<Schema name="Sarajevo-Osiguranje">
+	<Cube name="Ispla&#263;ene &#353;tete" cache="true" enabled="true">
+		<Table name="FACT_CLAIM"/>
+	    
+		<Dimension foreignKey="DIM_INSURANCE_TYPE_ID" name="Tarifa" caption="Tarifa">
+			<Hierarchy hasAll="true" allMemberName="Sve Tarife" primaryKey="INSURANCE_TYPE_ID">
+				<Table name="DIM_INSURANCE_TYPE"></Table>
+				<Level name="Grupa" ordinalColumn="insurance_type_code" column="insurance_type_code" captionColumn="insurance_type_name" Type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never"/>
+				<Level name="Vrsta" ordinalColumn="risk_code" column="risk_code" type="String" captionColumn="risk_name" uniqueMembers="true" levelType="Regular" hideMemberIf="Never"/>
+			</Hierarchy>
+		</Dimension>	
+		
+		<Dimension foreignKey="DIM_BRANCH_ID" name="Branch" caption="Podru&#382;nica">
+			<Hierarchy hasAll="true" allMemberName="Sve podru&#382;nice" primaryKey="BRANCH_ID">
+				<Table name="DIM_BRANCH"/>
+				<Level name="Branch" caption="Podru&#382;nica" column="BRANCH_NAME" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never"/>
+			</Hierarchy>
+		</Dimension>
+		
+		<Dimension foreignKey="DIM_CLAIM_ID" name="PreWar" caption="Prijeratne">
+			<Hierarchy hasAll="true" allMemberName="Sve &#353;tete" primaryKey="CLAIM_ID" >
+				<Table name="DIM_CLAIM"/>
+				<Level name="PreWar" caption="Prijeratna" column="is_pre_war" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never"/>
+			</Hierarchy>
+		</Dimension>
+		
+		<Dimension foreignKey="DIM_CLAIM_ID" name="GreenCard" caption="ZK">
+			<Hierarchy hasAll="true" allMemberName="Sve &#353;tete" primaryKey="CLAIM_ID" >
+				<Table name="DIM_CLAIM"/>
+				<Level name="GreenCard" caption="Zelena karta" column="is_green_card" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never"/>
+			</Hierarchy>
+		</Dimension>
+	
+		<Dimension foreignKey="DIM_CLAIM_ID" name="Judical" caption="Sudska">
+			<Hierarchy hasAll="true" allMemberName="Sve &#353;tete" primaryKey="CLAIM_ID" >
+				<Table name="DIM_CLAIM"/>
+				<Level name="Judical" caption="sudska" column="is_judical" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never"/>
+			</Hierarchy>
+		</Dimension>
+		
+		<Dimension foreignKey="DIM_CLAIM_ID" name="Claim" caption="Broj-oznaka &#352;tete">
+			<Hierarchy hasAll="true" allMemberName="Sve &#353;tete" primaryKey="CLAIM_ID">
+				<Table name="DIM_CLAIM"/>
+				<Level name="Claim" caption="Broj &#352;tete" column="CLAIM_NUMBER" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never"/>
+			</Hierarchy>					
+		</Dimension>
+		
+		
+		<Dimension type="TimeDimension" foreignKey="DIM_PAID_TIME_ID" name="Time" caption="Vrijeme">
+			<Hierarchy hasAll="true" allMemberName="All Years" primaryKey="TIME_ID">
+				<Table name="DIM_TIME"/>
+				<Level name="Godina" column="YEAR" type="String" uniqueMembers="true" levelType="TimeYears" hideMemberIf="Never"></Level>
+				<Level name="Polugodi&#353;te" column="HALF_YEAR" ordinalColumn="HALF_YEAR" type="String" uniqueMembers="false" levelType="TimeHalfYears" hideMemberIf="Never"/>
+				<Level name="Kvartal" column="QUARTER" ordinalColumn="QUARTER" type="String" uniqueMembers="false" levelType="TimeQuarters" hideMemberIf="Never"/>
+				<Level name="Mjesec" column="MONTH" captionColumn="MONTH_BOS" ordinalColumn="MONTH" type="Numeric" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never"/>
+				<!--<Level name="Mjesec" column="MONTH_BOS" ordinalColumn="MONTH" type="String" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never"/>-->
+				<Level name="Dan" column="date" uniqueMembers="true" ordinalColumn="date" nameColumn="date" levelType="TimeDays" type="String"/>
+			</Hierarchy>
+		</Dimension>
+		
+			<Dimension type="TimeDimension" foreignKey="DIM_PAID_TIME_ID" name="Time" caption="Vrijeme">
+			<Hierarchy hasAll="true" allMemberName="All Years" primaryKey="TIME_ID">
+				<Table name="DIM_TIME"/>
+				<Level name="Godina" column="YEAR" type="String" uniqueMembers="true" levelType="TimeYears" hideMemberIf="Never"></Level>
+				<Level name="Polugodi&#353;te" column="HALF_YEAR" ordinalColumn="HALF_YEAR" type="String" uniqueMembers="false" levelType="TimeHalfYears" hideMemberIf="Never"/>
+				<Level name="Kvartal" column="QUARTER" ordinalColumn="QUARTER" type="String" uniqueMembers="false" levelType="TimeQuarters" hideMemberIf="Never"/>
+				<Level name="Mjesec" column="MONTH" captionColumn="MONTH_BOS" ordinalColumn="MONTH" type="Numeric" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never"/>
+				<!--<Level name="Mjesec" column="MONTH_BOS" ordinalColumn="MONTH" type="String" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never"/>-->
+				<Level name="Dan" column="date" uniqueMembers="true" ordinalColumn="date" nameColumn="date" levelType="TimeDays" type="String"/>
+			</Hierarchy>
+		</Dimension>
+		
+		
+		
+		<Dimension type="TimeDimension" foreignKey="DIM_PAID_TIME_ID" name="DateOfPay" caption="Datum isplate ">
+			<Hierarchy hasAll="true" allMemberName="All Years" primaryKey="TIME_ID">
+				<Table name="DIM_TIME"/>
+				<Level name="Godina" column="YEAR" type="String" uniqueMembers="true" levelType="TimeYears" hideMemberIf="Never"></Level>
+				<Level name="Polugodi&#353;te" column="HALF_YEAR" ordinalColumn="HALF_YEAR" type="String" uniqueMembers="false" levelType="TimeHalfYears" hideMemberIf="Never"/>
+				<Level name="Kvartal" column="QUARTER" ordinalColumn="QUARTER" type="String" uniqueMembers="false" levelType="TimeQuarters" hideMemberIf="Never"/>
+			    <Level name="Mjesec" column="MONTH" captionColumn="MONTH_BOS" ordinalColumn="MONTH" type="Numeric" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never"/>
+				<!--<Level name="Mjesec" column="MONTH_BOS" ordinalColumn="MONTH" type="String" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never"/>-->
+				<Level name="Dan" column="date" uniqueMembers="true" ordinalColumn="date" nameColumn="date" levelType="TimeDays" type="String"/>
+			</Hierarchy>
+		</Dimension>
+		
+
+		<Dimension type="TimeDimension" foreignKey="DIM_LOSS_TIME_ID" name="DateOfLoss" caption="Datum nastanka">
+			<Hierarchy hasAll="true" allMemberName="All Years" primaryKey="TIME_ID">
+				<Table name="DIM_TIME"/>
+				<Level name="Godina" column="YEAR" type="String" uniqueMembers="true" levelType="TimeYears" hideMemberIf="Never"></Level>
+				<Level name="Polugodi&#353;te" column="HALF_YEAR" ordinalColumn="HALF_YEAR" type="String" uniqueMembers="false" levelType="TimeHalfYears" hideMemberIf="Never"/>
+				<Level name="Kvartal" column="QUARTER" ordinalColumn="QUARTER" type="String" uniqueMembers="false" levelType="TimeQuarters" hideMemberIf="Never"/>
+				<Level name="Mjesec" column="MONTH" captionColumn="MONTH_BOS" ordinalColumn="MONTH" type="Numeric" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never"/>
+				<!--<Level name="Mjesec" column="MONTH_BOS" ordinalColumn="MONTH" type="String" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never"/>-->
+				<Level name="Dan" column="date" uniqueMembers="true" ordinalColumn="date" nameColumn="date" levelType="TimeDays" type="String"/>
+			</Hierarchy>
+		</Dimension>	
+		
+		<Measure name="PAID" column="PAID_AMOUNT" formatString="#,###.00" aggregator="sum" caption="Ispla&#263;eno"/>
+		<Measure name="NUMBER" column="DIM_CLAIM_ID"  aggregator="distinct-count" caption="Br. &#353;teta"/>
+		<Measure name="PAID MATERIAL" column="PAID_AMOUNT_MATERIAL" formatString="#,###.00" aggregator="sum" caption="Ispla&#263;eno Mat."/>
+		<Measure name="PAID NONMATERIAL" column="PAID_AMOUNT_NONMATERIAL" formatString="#,###.00" aggregator="sum" caption="Ispla&#263;eno Nemat."/> 
+		<!--Procjecna stavka likvidacije <Measure name="AVERAGE LIQ" column="PAID_AMOUNT" aggregator="avg" datatype="Numeric" formatString="#,###.00" caption="Prosjecna likvidacija"/>-->
+		<CalculatedMember name="AVERAGE PAID" dimension="Measures" formula="[Measures].[PAID] /[Measures].[NUMBER]" caption="Prosje&#269;na &#353;teta.">
+			<CalculatedMemberProperty name="FORMAT_STRING" value="#,##0.00"/>
+		</CalculatedMember>		
+	</Cube>
+</Schema>

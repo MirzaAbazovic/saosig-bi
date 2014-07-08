@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_jrqT8PFlEeOLbfFCRLl3Fw" comment="connectionComment" label="connectionLabel" dataPackage="_jrqT8fFlEeOLbfFCRLl3Fw" mappingTypeUsed="true" mappingTypeId="id_MSSQL"/>
+  <TalendMetadata:GenericPackage xmi:id="_jrqT8fFlEeOLbfFCRLl3Fw" dataManager="_jrqT8PFlEeOLbfFCRLl3Fw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_jrqT8vFlEeOLbfFCRLl3Fw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrqT8_FlEeOLbfFCRLl3Fw" name="Id" id="413" label="Id" length="19" sourceType="" talendType="id_Long" nullable="false">
+        <initialValue xmi:id="_jrqT9PFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrqT9fFlEeOLbfFCRLl3Fw" name="CmtId" id="414" label="CmtId" length="19" sourceType="" talendType="id_Long" nullable="false">
+        <initialValue xmi:id="_jrqT9vFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrqT9_FlEeOLbfFCRLl3Fw" name="ClaimTypeId" id="415" label="ClaimTypeId" length="10" sourceType="" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_jrqT-PFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrqT-fFlEeOLbfFCRLl3Fw" name="Tarifa" id="416" label="Tarifa" length="2" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_jrqT-vFlEeOLbfFCRLl3Fw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrqT-_FlEeOLbfFCRLl3Fw" name="ClaimNo" id="417" label="ClaimNo" length="50" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_jrqT_PFlEeOLbfFCRLl3Fw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrqT_fFlEeOLbfFCRLl3Fw" name="ClaimNoOld" id="418" label="ClaimNoOld" length="50" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_jrqT_vFlEeOLbfFCRLl3Fw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrqT__FlEeOLbfFCRLl3Fw" name="OrgUnitSubjectId" id="419" label="OrgUnitSubjectId" length="19" sourceType="" talendType="id_Long" nullable="false">
+        <initialValue xmi:id="_jrqUAPFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7APFlEeOLbfFCRLl3Fw" name="OrgUnit" id="420" label="OrgUnit" length="250" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_jrq7AfFlEeOLbfFCRLl3Fw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7AvFlEeOLbfFCRLl3Fw" name="EventDate" id="421" label="EventDate" length="23" precision="3" sourceType="" talendType="id_Date">
+        <initialValue xmi:id="_jrq7A_FlEeOLbfFCRLl3Fw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7BPFlEeOLbfFCRLl3Fw" name="ClaimDate" id="422" label="ClaimDate" length="23" precision="3" sourceType="" talendType="id_Date">
+        <initialValue xmi:id="_jrq7BfFlEeOLbfFCRLl3Fw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7BvFlEeOLbfFCRLl3Fw" name="ExpectedAmountMaterial" id="423" label="ExpectedAmountMaterial" length="19" precision="2" sourceType="" talendType="id_BigDecimal">
+        <initialValue xmi:id="_jrq7B_FlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7CPFlEeOLbfFCRLl3Fw" name="ExpectedAmountNonMaterial" id="424" label="ExpectedAmountNonMaterial" length="19" precision="2" sourceType="" talendType="id_BigDecimal">
+        <initialValue xmi:id="_jrq7CfFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7CvFlEeOLbfFCRLl3Fw" name="PayoffDate" id="425" label="PayoffDate" length="23" precision="3" sourceType="" talendType="id_Date">
+        <initialValue xmi:id="_jrq7C_FlEeOLbfFCRLl3Fw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7DPFlEeOLbfFCRLl3Fw" name="PayoffAmountMaterial" id="426" label="PayoffAmountMaterial" length="19" precision="4" sourceType="" talendType="id_BigDecimal">
+        <initialValue xmi:id="_jrq7DfFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7DvFlEeOLbfFCRLl3Fw" name="PayoffAmountNonMaterial" id="427" label="PayoffAmountNonMaterial" length="19" precision="4" sourceType="" talendType="id_BigDecimal">
+        <initialValue xmi:id="_jrq7D_FlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7EPFlEeOLbfFCRLl3Fw" name="PreWar" id="428" label="PreWar" length="1" sourceType="" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_jrq7EfFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7EvFlEeOLbfFCRLl3Fw" name="Prosecution" id="429" label="Prosecution" length="2" sourceType="" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_jrq7E_FlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7FPFlEeOLbfFCRLl3Fw" name="Reactivated" id="430" label="Reactivated" length="2" sourceType="" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_jrq7FfFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7FvFlEeOLbfFCRLl3Fw" name="IsReserved" id="431" label="IsReserved" length="2" sourceType="" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_jrq7F_FlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7GPFlEeOLbfFCRLl3Fw" name="GreenCard" id="432" label="GreenCard" length="1" sourceType="" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_jrq7GfFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7GvFlEeOLbfFCRLl3Fw" name="ProsecutionJudical" id="433" label="ProsecutionJudical" length="2" sourceType="" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_jrq7G_FlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7HPFlEeOLbfFCRLl3Fw" name="ApplicantClientId" id="434" label="ApplicantClientId" length="10" sourceType="" talendType="id_Integer">
+        <initialValue xmi:id="_jrq7HfFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7HvFlEeOLbfFCRLl3Fw" name="ContractNo" id="435" label="ContractNo" length="50" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_jrq7H_FlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7IPFlEeOLbfFCRLl3Fw" name="InsuredName" id="436" label="InsuredName" length="120" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_jrq7IfFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7IvFlEeOLbfFCRLl3Fw" name="InsuredClientId" id="437" label="InsuredClientId" length="19" sourceType="" talendType="id_Long">
+        <initialValue xmi:id="_jrq7I_FlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7JPFlEeOLbfFCRLl3Fw" name="AOPlus" id="438" label="AOPlus" length="1" sourceType="" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_jrq7JfFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7JvFlEeOLbfFCRLl3Fw" name="AKD" id="439" label="AKD" length="1" sourceType="" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_jrq7J_FlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7KPFlEeOLbfFCRLl3Fw" name="AN" id="440" label="AN" length="1" sourceType="" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_jrq7KfFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7KvFlEeOLbfFCRLl3Fw" name="ParentOrgUnitSubjectId" id="441" label="ParentOrgUnitSubjectId" length="19" sourceType="" talendType="id_Long" nullable="false">
+        <initialValue xmi:id="_jrq7K_FlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jrq7LPFlEeOLbfFCRLl3Fw" name="HolderClientId" id="442" label="HolderClientId" length="19" sourceType="" talendType="id_Long">
+        <initialValue xmi:id="_jrq7LfFlEeOLbfFCRLl3Fw" body=""/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

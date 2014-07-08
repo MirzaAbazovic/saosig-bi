@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:WSDLSchemaConnection xmi:id="_ZXMfsK9oEeOhoOrkuSRELA" name="repository.metadataWSDLSchema" dataPackage="_ZXMf069oEeOhoOrkuSRELA" WSDL="&quot;http://192.168.0.44/WSClientsTamara/Clientsservice.asmx?wsdl&quot;" methodName="GetClient(parameters):GetClientResponse" timeOut="20" isInputModel="false" serverNameSpace="http://www.hermes-softlab.com/integrations/clients" serverName="ClientsService" portNameSpace="http://www.hermes-softlab.com/integrations/clients" portName="ClientsServiceSoap">
+    <parameterValue xmi:id="_ZXMfsa9oEeOhoOrkuSRELA" Element="parameters"/>
+    <parameterValue xmi:id="_ZXMfsq9oEeOhoOrkuSRELA" ParameterInfo="parameters" ParameterInfoParent=""/>
+    <parameterValue xmi:id="_ZXMfs69oEeOhoOrkuSRELA" ParameterInfo="request" ParameterInfoParent="parameters"/>
+    <parameterValue xmi:id="_ZXMftK9oEeOhoOrkuSRELA" ParameterInfo="Id" ParameterInfoParent="request"/>
+    <outputParameter xmi:id="_ZXMfta9oEeOhoOrkuSRELA" Element="parameters"/>
+    <outputParameter xmi:id="_ZXMftq9oEeOhoOrkuSRELA" ParameterInfo="parameters" ParameterInfoParent=""/>
+    <outputParameter xmi:id="_ZXMft69oEeOhoOrkuSRELA" ParameterInfo="GetClientResult" ParameterInfoParent="parameters"/>
+    <outputParameter xmi:id="_ZXMfuK9oEeOhoOrkuSRELA" ParameterInfo="Client" ParameterInfoParent="GetClientResult"/>
+    <outputParameter xmi:id="_ZXMfua9oEeOhoOrkuSRELA" ParameterInfo="ErrorList" ParameterInfoParent="GetClientResult"/>
+    <outputParameter xmi:id="_ZXMfuq9oEeOhoOrkuSRELA" ParameterInfo="Id" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfu69oEeOhoOrkuSRELA" ParameterInfo="Version" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfvK9oEeOhoOrkuSRELA" ParameterInfo="ClientType" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfva9oEeOhoOrkuSRELA" ParameterInfo="IdNumber" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfvq9oEeOhoOrkuSRELA" ParameterInfo="Name" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfv69oEeOhoOrkuSRELA" ParameterInfo="Surname" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfwK9oEeOhoOrkuSRELA" ParameterInfo="StreetAddress" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfwa9oEeOhoOrkuSRELA" ParameterInfo="StreetAddressNo" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfwq9oEeOhoOrkuSRELA" ParameterInfo="LocationId" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfw69oEeOhoOrkuSRELA" ParameterInfo="LocationName" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfxK9oEeOhoOrkuSRELA" ParameterInfo="MunicipalityId" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfxa9oEeOhoOrkuSRELA" ParameterInfo="PostalCode" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfxq9oEeOhoOrkuSRELA" ParameterInfo="RegionId" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfx69oEeOhoOrkuSRELA" ParameterInfo="CountryId" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfyK9oEeOhoOrkuSRELA" ParameterInfo="ExternalCode" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfya9oEeOhoOrkuSRELA" ParameterInfo="Created" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfyq9oEeOhoOrkuSRELA" ParameterInfo="Updated" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfy69oEeOhoOrkuSRELA" ParameterInfo="PhoneNumber" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfzK9oEeOhoOrkuSRELA" ParameterInfo="BankName" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfza9oEeOhoOrkuSRELA" ParameterInfo="AccountNumber" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfzq9oEeOhoOrkuSRELA" ParameterInfo="DriversLicenseNo" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMfz69oEeOhoOrkuSRELA" ParameterInfo="IdCardNo" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMf0K9oEeOhoOrkuSRELA" ParameterInfo="PassportNo" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMf0a9oEeOhoOrkuSRELA" ParameterInfo="Resident" ParameterInfoParent="Client"/>
+    <outputParameter xmi:id="_ZXMf0q9oEeOhoOrkuSRELA" ParameterInfo="string" ParameterInfoParent="ErrorList"/>
+  </TalendMetadata:WSDLSchemaConnection>
+  <TalendMetadata:GenericPackage xmi:id="_ZXMf069oEeOhoOrkuSRELA" name="repository.metadataWSDLSchema" dataManager="_ZXMfsK9oEeOhoOrkuSRELA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ZXMf1K9oEeOhoOrkuSRELA" id="_PdM7wK9oEeOhoOrkuSRELA" label="Output"/>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ZXMf1a9oEeOhoOrkuSRELA" id="_QNAoEK9oEeOhoOrkuSRELA" label="Input"/>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

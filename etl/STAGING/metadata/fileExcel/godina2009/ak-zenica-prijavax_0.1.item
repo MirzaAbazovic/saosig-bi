@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_vHuwoa9kEeO5aZI0rqFVJQ" name="ak-zenica-prijavax" dataPackage="_vHuwoq9kEeO5aZI0rqFVJQ" Server="Localhost 127.0.0.1" FilePath="D:/!!!DATA/aplikacije/ak/zenica/2009/prijavax_god_9.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="prijavax_god_9" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="prijavax_god_9:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+    <sheetColumns>K</sheetColumns>
+    <sheetColumns>L</sheetColumns>
+    <sheetColumns>M</sheetColumns>
+    <sheetColumns>N</sheetColumns>
+    <sheetColumns>O</sheetColumns>
+    <sheetColumns>P</sheetColumns>
+    <sheetColumns>Q</sheetColumns>
+    <sheetColumns>R</sheetColumns>
+    <sheetColumns>S</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_vHuwoq9kEeO5aZI0rqFVJQ" name="default" dataManager="_vHuwoa9kEeO5aZI0rqFVJQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_vHuwo69kEeO5aZI0rqFVJQ" id="_dP_TAK9kEeO5aZI0rqFVJQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwpK9kEeO5aZI0rqFVJQ" label="broj_police" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="100"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwpa9kEeO5aZI0rqFVJQ" label="podruznica_sifra" length="100" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;" originalLength="100"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwpq9kEeO5aZI0rqFVJQ" label="podruznica_naziv" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="100"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwp69kEeO5aZI0rqFVJQ" label="tarifa_stara_sifra" length="100" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;" originalLength="100"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwqK9kEeO5aZI0rqFVJQ" label="tarifa_nova_sifra" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="100"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwqa9kEeO5aZI0rqFVJQ" label="tarifa_naziv" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="100"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwqq9kEeO5aZI0rqFVJQ" label="broj_stete_stari" length="100" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;" originalLength="100"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwq69kEeO5aZI0rqFVJQ" label="godina_stete_stara" length="11" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;" originalLength="11"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwrK9kEeO5aZI0rqFVJQ" label="broj_stete_novi" length="11" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;" originalLength="11"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwra9kEeO5aZI0rqFVJQ" label="godina_stete_novi" length="11" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;" originalLength="11"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwrq9kEeO5aZI0rqFVJQ" label="broj_dogadjaja" length="11" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;" originalLength="11"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwr69kEeO5aZI0rqFVJQ" label="godina_dogadjaja" length="11" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;" originalLength="11"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwsK9kEeO5aZI0rqFVJQ" label="stari_broj" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="100"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwsa9kEeO5aZI0rqFVJQ" label="stari_jedinstveni_broj" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="100"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwsq9kEeO5aZI0rqFVJQ" label="novi" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="100"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuws69kEeO5aZI0rqFVJQ" label="mjesto_nastanka" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;" originalLength="255"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwtK9kEeO5aZI0rqFVJQ" label="datum_nastanka" length="28" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwta9kEeO5aZI0rqFVJQ" label="datum_prijave" length="28" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHuwtq9kEeO5aZI0rqFVJQ" label="datum_pribave_dokumenta" length="28" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
