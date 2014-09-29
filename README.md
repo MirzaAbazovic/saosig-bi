@@ -5,7 +5,7 @@ Svrha projekta je da obezbjedi poslovnim analiticarima analize podataka o polica
 Projekat je baziran na open source software-u
 - 	DB server je MySql Community Server 5 (http://dev.mysql.com/downloads/mysql/)
 -	Online Analytical Processing server (OLAP) je Mondrian (http://community.pentaho.com/projects/mondrian/)
--	Korisnicko sucelje je Saiku(http://www.meteorite.bi/saiku) i Pivot4J (http://www.pivot4j.org/)
+-	Korisnicko sucelje je Saiku(http://www.meteorite.bi/saiku)
 
 Ver 0.1
 Analiza placenih steta u 2013 po tarifama i podruznicama. Hijearhija vremena sadrzi mjesec.
